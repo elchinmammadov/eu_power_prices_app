@@ -101,7 +101,8 @@ def download_or_view_data_func(df, unique_key): # creates . Uses 'unique_key' as
 
 
 # downloads source data from CSV into DataFrame
-df = pd.read_csv('european_wholesale_electricity_price_data_daily-4.csv') # copy CSV file downloaded from https://ember-climate.org/app/uploads/2022/09/european_wholesale_electricity_price_data_daily-4.csv into 'df' DataFrame into the same directory as this python file
+df = pd.read_csv("https://gist.githubusercontent.com/elchinmammadov/290d047dc1f6144c07288ecc3d5b2cef/raw/1e4ebf6670e7d42beabb38d1a3276550bbccb733/european_wholesale_electricity_price_data_daily-4.csv")  # copy CSV file downloaded from https://ember-climate.org/app/uploads/2022/09/european_wholesale_electricity_price_data_daily-4.csv to https://gist.github.com/ and then save the data as 'df' DataFrame
+#df = pd.read_csv('european_wholesale_electricity_price_data_daily-4.csv') # copy CSV file downloaded from https://ember-climate.org/app/uploads/2022/09/european_wholesale_electricity_price_data_daily-4.csv into 'df' DataFrame into the same directory as this python file
 
 
 # Streamlit script to turn this python script into wewb app
